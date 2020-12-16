@@ -1,0 +1,45 @@
+<h1>Test Work</h1>
+<div>
+	<div>
+		<div class="form-group">
+			<input type="text" id="search"
+        [(ngModel)]="searchText" placeholder="Enter name to search"
+        autofocus>
+    </div>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Brand</th>
+						<th>Domain</th>
+						<th>Price</th>
+						<th>Currency</th>
+						<th>Asin</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let prod of productList | searchfilter:searchText ">
+						<td>
+							{{prod.name}}
+						</td>
+						<td>
+							{{prod.brand}}
+						</td>
+						<td>
+							{{prod.domain}}
+						</td>
+						<td>
+							{{prod.price}}
+						</td>
+						<td>
+							{{prod.currency}}
+						</td>
+						<td>
+							{{prod.asin}}
+						</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>

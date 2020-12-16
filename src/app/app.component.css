@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: Lato;
+}
+
+td {
+  border: 1px solid black;
+}
+
+* {
+  font-size: 13px;
+  padding: 10px;
+}
+
+th {
+  background: black;
+  color: white;
+  font-size: 16px;
+}
